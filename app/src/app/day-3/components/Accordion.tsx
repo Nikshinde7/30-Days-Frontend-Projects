@@ -1,5 +1,5 @@
 "use client"
-import { ChevronDownIcon } from "@heroicons/react/16/solid"
+import { ChevronDownIcon } from "lucide-react"
 import React, { cloneElement, useState } from "react"
 
 export const Accordion = ({ children }: any) => {
@@ -30,7 +30,7 @@ Accordion.Toggle = ({ children, id, activePanel, setActivePanel }: any) => {
     const isActive = id !== activePanel;
 
     return (
-        <div className="flex cursor-pointer w-full items-center justify-between p-4 pb-0 rounded-lg hover:underline hover:underline-offset-2 transition-all hover:underline [&[data-state=open]>svg]:rotate-180"
+        <div className="flex cursor-pointer w-full items-center justify-between p-4 pb-0 rounded-lg hover:underline-offset-2 transition-all hover:underline [&[data-state=open]>svg]:rotate-180"
             onClick={() => {
                 if (isActive)
                     setActivePanel(id)
