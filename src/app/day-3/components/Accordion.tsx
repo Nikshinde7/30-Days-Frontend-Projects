@@ -30,7 +30,7 @@ Accordion.Toggle = ({ children, id, activePanel, setActivePanel }: any) => {
     const isActive = id !== activePanel;
 
     return (
-        <div className="flex cursor-pointer w-full items-center justify-between p-4 pb-0 rounded-lg hover:underline-offset-2 transition-all hover:underline [&[data-state=open]>svg]:rotate-180"
+        <div className="flex cursor-pointer w-full items-ce-nter justify-between p-4 pb-0 rounded-lg hover:underline-offset-2 transition-all hover:underline [&[data-state=open]>svg]:rotate-180"
             onClick={() => {
                 if (isActive)
                     setActivePanel(id)
