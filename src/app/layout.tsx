@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import {
+  Outfit,
+  Young_Serif
+} from 'next/font/google'
 import "./globals.css";
 
 const geistSans = localFont({
@@ -11,6 +15,17 @@ const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
+});
+
+const outfit = Outfit({
+  subsets: ['latin'],
+  variable: '--font-outfit'
+});
+
+const youngSerif = Young_Serif({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-youngSerif'
 });
 
 export const metadata: Metadata = {
@@ -26,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased ${outfit.variable} ${youngSerif.variable}`}
       >
         {children}
       </body>
