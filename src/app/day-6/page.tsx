@@ -30,7 +30,7 @@ export default function Page() {
             const result = checkPair(activeEl, listOfCapitals, listOfCountries);
 
             if (result) {
-                setBgColor('bg-green-600');
+                setBgColor('!bg-green-600');
                 const newRenderedList = renderedList.filter((el) => !activeEl.includes(el));
                 setTimeout(() => {
                     setBgColor('')
@@ -38,7 +38,7 @@ export default function Page() {
                     setActiveEl([])
                 }, 1000);
             } else {
-                setBgColor('bg-red-500')
+                setBgColor('!bg-red-500')
                 setTimeout(() => {
                     setBgColor('')
                     setActiveEl([]);
@@ -73,7 +73,7 @@ export default function Page() {
                                                     if (activeEl.length === 2)
                                                         return ''
                                                     else {
-                                                        setBgColor('bg-blue-500');
+                                                        setBgColor('!bg-blue-500');
                                                         const activeElements = [...activeEl];
                                                         activeElements.push(el);
                                                         setActiveEl(activeElements);
