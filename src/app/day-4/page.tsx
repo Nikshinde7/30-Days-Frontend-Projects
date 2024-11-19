@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { TLink } from "./types";
 import { SocialLink } from "./components/SocialLink";
+import React from "react";
 
 
 const links: TLink[] = [
