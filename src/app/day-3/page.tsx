@@ -1,5 +1,7 @@
 "use client"
+import React from "react";
 import { Accordion } from "./components/Accordion";
+
 
 export default function Page() {
     return (

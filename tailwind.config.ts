@@ -27,6 +27,7 @@ export default {
         inter: "inter",
         youngSerif: ["var(--font-youngSerif)"],
         outfit: ["var(--font-outfit)"],
+        manrope: ["var(--font-manrope)"],
       },
     },
   },
