@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Card } from "./components/Card";
 import { DATA } from "./data"
 import { checkPair, shuffle } from "./helpers";
+import React from "react";
 
 
 export default function Page() {

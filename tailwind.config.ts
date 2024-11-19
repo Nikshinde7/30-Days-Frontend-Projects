@@ -18,6 +18,10 @@ export default {
         "brown-800": "hsl(14, 45%, 36%)",
         "rose-800": "hsl(332, 51%, 32%)",
         "rose-50": "hsl(330, 100%, 98%)",
+        rainmaker: "hsl(217, 19%, 35%)",
+        "grey-blueberry": "hsl(214, 17%, 51%)",
+        "sterling-silver": "hsl(212, 23%, 69%)",
+        "aircraft-white": "hsl(210, 46%, 95%)",
       },
       fontFamily: {
         inter: "inter",
