@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { Separator } from "./components/Separator";
+import React from "react";
+
 
 export default function Page() {
     return (

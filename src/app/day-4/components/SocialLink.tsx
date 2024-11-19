@@ -1,5 +1,6 @@
 import { TLink } from "../types";
 import Link from "next/link";
+import React from "react";
 
 export const SocialLink = (LinkItem: TLink) => {
     return (
